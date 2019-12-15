@@ -5,6 +5,7 @@
 .dropdown {
     display: flex;
     flex-direction: column;
+    min-width: 280px;
 }
 
 .dropdown > button {
@@ -14,12 +15,14 @@
 
 .search {
     margin: 5px 0 5px 0;
+    min-width: 280px;
 }
 
 .checkbox {
     display: flex;
     justify-content: space-around;
     margin: 0 0 15px 0;
+    min-width: 280px;
 }
 
 .checkbox > input {
@@ -29,6 +32,7 @@
 .dates {
     display: flex;
     justify-content: space-between;
+    min-width: 280px;
 }
 .dates > .input-group {
     margin: 0 15px 0 15px;
@@ -36,6 +40,8 @@
 
 .report-search > button {
     width: 100%;
+    min-width: 280px;
+
 }
 
 
@@ -54,8 +60,8 @@ input[type='checkbox']:checked {
     
 
 
-    /* @media  (min-width: 1200px){
+    @media  (min-width: 400px){
         body {
             background-color: green;
         }
-    } */
+    }
