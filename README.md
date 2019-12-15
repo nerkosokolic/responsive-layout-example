@@ -22,4 +22,8 @@ Git clone https://github.com/nerkosokolic/responsive-layout-example.git
 ## License
 This project is licensed under the MIT License - see the LICENSE.md file for details
 
+## Leasons leant
+Flex box is great for simple things like moving elements ontop of each other or next to each other but for more precision display grid is superior. It allows you to assign the specific grid layout and them the allotment of each element within that grid. 
+
+
 
