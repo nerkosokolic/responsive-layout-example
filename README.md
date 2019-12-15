@@ -2,6 +2,8 @@
 
 A simple demonstration of responsive design
 
+![alt text](https://i.imgur.com/q9THtJC.jpg)
+
 ## Getting Started
 Instructions on how to get up and running to view the demo
 
