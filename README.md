@@ -6,7 +6,7 @@ A simple demonstration of responsive design
 Instructions on how to get up and running to view the demo
 
 ### Prerequisites
-Chrome with Developer Tools
+Chrome Version 79.0.3945.79 or greater
 
 ### Installing
 Git clone https://github.com/nerkosokolic/responsive-layout-example.git
