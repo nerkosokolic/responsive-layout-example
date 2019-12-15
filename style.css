@@ -1,21 +1,28 @@
-.top-menu {
+
+.container {
     padding: 2px;
 }
     
 .dropdown {
-    display: flex;
-    flex-direction: column;
-    min-width: 280px;
+    display: inline-block;
+    width: 100%;
 }
+
+.dropdown > div {
+    width: 100%;
+}
+
 
 .dropdown > button {
     margin-bottom: 2px;
     text-align: center;
+    
 }
 
 .search {
     margin: 5px 0 5px 0;
     min-width: 280px;
+
 }
 
 .checkbox {
@@ -23,6 +30,7 @@
     justify-content: space-around;
     margin: 0 0 15px 0;
     min-width: 280px;
+
 }
 
 .checkbox > input {
@@ -33,6 +41,7 @@
     display: flex;
     justify-content: space-between;
     min-width: 280px;
+
 }
 .dates > .input-group {
     margin: 0 15px 0 15px;
@@ -44,7 +53,14 @@
 
 }
 
+.filter-dropdown > button {
+    width: 100%;
+    min-width: 280px;
+    margin: 2px 0 2px 0;
+}
 
+
+/* Special voodoo to make larger checkboxes */
 input[type='checkbox'] {
     -webkit-appearance:none;
     width:20px;
@@ -56,12 +72,68 @@ input[type='checkbox'] {
 input[type='checkbox']:checked {
     background: #abd;
 }
+/* End of voodoo */
 
+
+@media (min-width: 767px) {
+    /* header {
+        margin: auto;
+    } */
     
+    .container {
+        /* margin: auto; */
+        /* margin: 2em auto; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.1fr 0.1fr;
+        grid-gap: 1rem; 
+        margin: 0 auto !important;
+        width: 800px !important;
+        
+        
+      }
+      .dropdown {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+      
+      .search {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 2;
+          grid-row-end: 2;
+      }
+      
+      .checkbox {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 3;
+     
+      } 
+      
+      .report {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+      }
+
+      .dates {
+          display: flex;
+          flex-direction: column;
+      }
+
+      .dates > .input-group {
+          margin: 2px 0 2px 0 !important;
+
+      }
 
 
-    @media  (min-width: 400px){
-        body {
-            background-color: green;
-        }
-    }
+      
+      /* .report-search {
+          margin-top: 8px;
+      } */
+}

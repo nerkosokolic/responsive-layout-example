@@ -2,7 +2,7 @@
 
 A simple demonstration of responsive design
 
-![alt text](https://i.imgur.com/q9THtJC.jpg)
+![alt text](https://i.imgur.com/9otcUjd.jpg)
 
 ## Getting Started
 Instructions on how to get up and running to view the demo
